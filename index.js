@@ -3,6 +3,7 @@ const connect = require('./db/connect');
 const { UserModel } = require('./db/user');
 const app = express();
 
+
 app.get('/',async (req,res)=>{
     res.send('hello')
 })
