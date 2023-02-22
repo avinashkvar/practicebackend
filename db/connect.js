@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 mongoose.set('strictQuery',false)
-const url =
-	'mongodb+srv://vercel-admin-user:7OyXqqCb9nHTY7kO@cluster0.7aune5i.mongodb.net/newproject?retryWrites=true&w=majority';
+require('dotenv').config();
+const url  = process.env.MONGODB_URI
 
 async function connect (){
      return new Promise((resolve, reject)=>{
