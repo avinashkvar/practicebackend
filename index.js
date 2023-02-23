@@ -22,4 +22,4 @@ connect()
     app.listen(3000,()=>{
         console.log('listening on port 3000')
     })
-}).catch((err)=>console.log(err))
+}).catch((err)=>return err)
